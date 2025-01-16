@@ -12,7 +12,7 @@
             Hello Dear, <br/><br/> Bienvenue sur The Reaper. Vous êtes un inspecteur et votre but est de me trouver. J'ai caché 3 indices vous permettant d'arriver là où la modernité est à son comble. Bonne chance inpecteur vous aurez aucune chance. <br/><br/>Signé JTR
             
         </p>
-        <button id="play-button" onclick="window.location.href='chap1'">Start</button>
+        <button id="play-button" onclick="window.location.href='../chap1'">Start</button>
     </div>
     <div class="kill-message"></div>
     <audio id="background-audio" src="./sounds/Londonbridge.mp3" autoplay loop></audio>
