@@ -24,7 +24,7 @@
         <button id="play-button" onclick="window.location.href='begingame'">Play</button>
     </div>
     <div class="kill-message"></div>
-    <audio id="background-audio" src="./sounds/Londonbridge.mp3" autoplay loop></audio>
+    <audio id="background-audio" src="./assets/sounds/Londonbridge.mp3" autoplay loop></audio>
     <script src="./assets/js/killmessage.js"></script>
 </body>
 </html>
