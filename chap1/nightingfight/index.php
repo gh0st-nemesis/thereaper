@@ -11,6 +11,7 @@
         <p class="glitch-title">
             Voici mes pulsions, dis mon nom, crie le
         </p>
+        <div id="timer">30</div>
         <form id="code-form" method="post">
             <input type="text" name="code" placeholder="Enter the code" required>
             <button type="submit">Submit</button>
@@ -27,6 +28,13 @@
         ?>
     </div>
     <div class="kill-message"></div>
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over : Jack vous a tué</h2>
+            <button onclick="location.reload()">Refresh</button>
+        </div>
+    </div>
     <script src="../../assets/js/killmessage.js"></script>
+    <script src="../../assets/js/timer.js"></script>
 </body>
 </html>
