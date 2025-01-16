@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Reaper - chapitre 1</title>
-    <link rel="stylesheet" href="assets/css/chap1enquete.css">
+    <link rel="stylesheet" href="../../assets/css/chap1enquete.css">
 </head>
 <body>
     <div class="">
