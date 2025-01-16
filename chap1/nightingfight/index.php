@@ -22,7 +22,6 @@
             if (strtolower($code) === 'jack the ripper') {
                 echo '<p class="success-message">Correct! You found the code.</p>';
                 header('Location: /chap1/dreamwakeup');
-                exit();
             } else {
                 echo '<p class="error-message">Incorrect code. Try again.</p>';
             }
