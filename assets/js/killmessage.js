@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const killContainer = document.querySelector(".kill-message");
-    const numKills = 50; // Number of "kills"
+    const numKills = 100; // Number of "kills"
     
     // Function to generate a random color
     const randomColor = () => {

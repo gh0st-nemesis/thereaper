@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'helpme';      /* Le nom de la police que vous allez utiliser */
+    src: url('../fonts/HelpMe.ttf') format('truetype'); /* Chemin relatif vers le fichier TTF */
+    font-weight: normal;          /* Optionnel : selon le poids de la police */
+    font-style: normal;           /* Optionnel : selon le style de la police */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #090a10, #161b24);
+    animation: backgroundEffect 20s infinite;
+    position: relative;
+}
+
+.glitch {
+    width: 100vh;
+    height: 100vh;
+    background: url("../img/chap1/enquete.png");
+    background-size: cover;
+    animation: glitch 3.5s infinite steps(1);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.glitch-title {
+    font-size: 50px;
+    color: rgb(255, 1, 1); /* Couleur du vrai sang */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Police initiale */
+    transition: font-family 0.3s ease, color 0.3s ease; /* Transition fluide */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+    position: relative;
+    display: inline-block;
+}
+
+p.glitch-title {
+    font-family: 'Times New Roman', serif; /* Police classique pour une lettre */
+    font-size: 24px;
+    line-height: 1.6;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+
+
+@keyframes drip {
+    0% {
+        height: 10px;
+        opacity: 1;
+    }
+    100% {
+        height: 100px;
+        opacity: 0;
+    }
+}
+
+
+
+.kill-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.kill-message span {
+    font-size: 80px; /* Taille ajustée pour une meilleure visibilité */
+    font-family: 'helpme';
+    position: absolute;
+    color: var(--color); /* Permet de varier les couleurs */
+    transform: translate(-50%, -50%) scale(0.5); /* Taille initiale plus petite */
+    animation: showKillMessage 20s infinite;
+    opacity: 0;
+    overflow: hidden;
+}
+
+@keyframes randomPosition {
+    0%, 50%, 100% {
+        top: calc(100vh * var(--i) / 10);
+        left: calc(100vw * var(--i) / 10);
+    }
+    51%, 60% {
+        top: calc(100vh * var(--i) / 10);
+        left: calc(100vw * var(--i) / 10);
+    }
+}
+
+@keyframes showKillMessage {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+    51%, 60% {
+        opacity: 1;
+    }
+}
+@keyframes killAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(calc(-50% + 10px), calc(-50% - 10px)) scale(1) rotate(10deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(calc(-50% - 10px), calc(-50% + 10px)) scale(1.2) rotate(-10deg);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translate(calc(-50% + 10px), calc(-50% - 10px)) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+#play-button {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+#play-button:hover   {
+    background-color: #8b0000;
+    font-family: "helpme";
+}
+
+#play-button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+}

@@ -21,7 +21,7 @@
             <span class="drip" style="--i: 9;"></span>
             <span class="drip" style="--i: 10;"></span>
         </h1>
-        <button id="play-button">Play</button>
+        <button id="play-button" onclick="window.location.href='begingame'">Play</button>
     </div>
     <div class="kill-message"></div>
     <audio id="background-audio" src="./sounds/Londonbridge.mp3" autoplay loop></audio>
