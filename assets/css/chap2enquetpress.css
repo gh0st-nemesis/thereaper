@@ -24,7 +24,7 @@ body {
 .glitch {
     width: 100vh;
     height: 100vh;
-    background: url("../img/chap2/enquetepress.png");
+    background: url("../img/chap3/day.png");
     background-size: cover;
     animation: glitch 3.5s infinite steps(1);
     justify-content: center;

@@ -9,7 +9,7 @@
 <body>
     <div class="glitch">
         <p class="glitch-title">
-            Vous avez fait un cauchemar mais une lettre vous a été remis la nuit continuer sur /letter
+            Tu
         </p>
         
     </div>
