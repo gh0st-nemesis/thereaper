@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../assets/css/chap2enquetpress.css">
 </head>
 <body>
-    <div class="">
+    <div class="glitch">
         <p class="glitch-title">
         Ef gpfi pynzcp fy tyotnp ald gclt ? Alespetbfp /nsla2/pybfpepacpdd
             
