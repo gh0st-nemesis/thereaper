@@ -122,14 +122,7 @@ p.glitch-title {
     }
 }
 
-@keyframes backgroundEffect {
-    0%, 50%, 100% {
-        background: linear-gradient(45deg, #090a10, #161b24);
-    }
-    51%, 60% {
-        background: red;
-    }
-}
+
 
 .kill-message {
     position: absolute;
