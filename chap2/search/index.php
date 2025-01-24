@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Reaper - chapitre 2</title>
-    <link rel="stylesheet" href="../../assets/css/chap2enquetpress.css">
+    <title>The Reaper - Letter</title>
+    
 </head>
 <body>
     <div class="glitch">
         <p class="glitch-title">
-        Lis ma lettre et trouve moi 
-            
+            cipher 2 : 5KU1NLXVVDXF9BUVtKVwdLXFRDWVpBVFhKVlZLXFhDXFlBUVtKVwdLXFBDXVNBVFhKU1NLXABDXV9BUVtKVlBLXVRDXVNBVFhKU1NL
         </p>
+        <a href="/chap3" class="next-chapter" style="z-index:2;">Go to Chapter 3</a>
         
     </div>
+    
     
 </body>
 </html>
