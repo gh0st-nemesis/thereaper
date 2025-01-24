@@ -45,16 +45,7 @@ body {
     z-index: 1;
 }
 
-.glitch-title .drip {
-    position: absolute;
-    top: 100%;
-    width: 10px;
-    height: 10px;
-    background: rgb(139, 0, 0); /* Couleur du vrai sang */
-    border-radius: 50%;
-    box-shadow: 0 0 10px #8b0000, 0 0 20px rgb(139, 0, 0), 0 0 30px rgb(139, 0, 0);
-    animation: drip 1.5s infinite;
-}
+
 p.glitch-title {
     font-family: 'Times New Roman', serif; /* Police classique pour une lettre */
     font-size: 24px;
