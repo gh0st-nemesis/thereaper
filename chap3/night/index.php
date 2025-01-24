@@ -22,7 +22,7 @@
             $code = $_POST['code'];
             if (strtolower($code) === 'save&run') {
                 echo '<p class="success-message">Correct! You found the code.</p>';
-                header('Location: /chap3/day');
+                header('Location: /chap3/daymorning');
             } else {
                 echo '<p class="error-message">Incorrect code. Try again.</p>';
             }
